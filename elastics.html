@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elastics — WYSSA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body data-page="elastics" class="is-bento">
+    <div class="shell">
+      <div data-site-header></div>
+      <main id="inhalt" class="page">
+        <div class="panel">
+          <h1>Elastics</h1>
+          <p class="panel__lede">FORCE intraoral elastics, LINK power chain and TIE ligatures.</p>
+          <div class="filters" role="group" aria-label="Filter">
+            <button class="filter is-selected" type="button" data-filter="alle" aria-pressed="true">All</button>
+            <button class="filter" type="button" data-filter="force" aria-pressed="false">FORCE</button>
+            <button class="filter" type="button" data-filter="link" aria-pressed="false">LINK</button>
+            <button class="filter" type="button" data-filter="tie" aria-pressed="false">TIE</button>
+          </div>
+        </div>
+        <section class="card-grid" data-catalog="elastics">
+          <p data-empty hidden>No matching products.</p>
+        </section>
+      </main>
+      <div data-site-footer></div>
+    </div>
+    <script src="js/catalog.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

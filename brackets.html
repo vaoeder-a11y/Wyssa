@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brackets — WYSSA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body data-page="brackets" class="is-bento">
+    <div class="shell">
+      <div data-site-header></div>
+      <main id="inhalt" class="page">
+        <div class="panel">
+          <h1>Brackets</h1>
+          <p class="panel__lede">ALIGN bracket systems and buccal tubes. Select line, prescription and slot.</p>
+          <div class="filter-row">
+            <span>Line</span>
+            <div class="filters" data-facet-group="id" role="group" aria-label="Product line">
+              <button class="filter is-selected" type="button" data-facet="alle" aria-pressed="true">All</button>
+              <button class="filter" type="button" data-facet="align-m1" aria-pressed="false">ALIGN M1</button>
+              <button class="filter" type="button" data-facet="align-bt1" aria-pressed="false">ALIGN BT1</button>
+            </div>
+          </div>
+          <div class="filter-row">
+            <span>Prescription</span>
+            <div class="filters" data-facet-group="rx" role="group" aria-label="Prescription">
+              <button class="filter is-selected" type="button" data-facet="alle" aria-pressed="true">All</button>
+              <button class="filter" type="button" data-facet="mbt" aria-pressed="false">MBT</button>
+              <button class="filter" type="button" data-facet="roth" aria-pressed="false">Roth</button>
+            </div>
+          </div>
+          <div class="filter-row">
+            <span>Slot</span>
+            <div class="filters" data-facet-group="slot" role="group" aria-label="Slot">
+              <button class="filter is-selected" type="button" data-facet="alle" aria-pressed="true">All</button>
+              <button class="filter" type="button" data-facet="018" aria-pressed="false">.018"</button>
+              <button class="filter" type="button" data-facet="022" aria-pressed="false">.022"</button>
+            </div>
+          </div>
+        </div>
+        <section class="card-grid" data-catalog="brackets">
+          <p data-empty hidden>No matching products.</p>
+        </section>
+      </main>
+      <div data-site-footer></div>
+    </div>
+    <script src="js/catalog.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

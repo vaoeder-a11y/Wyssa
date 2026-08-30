@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WYSSA ALIGN M1 — Precision Metal Bracket System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body data-page="brackets" class="is-bento">
+    <div class="shell">
+      <div data-site-header></div>
+      <main id="inhalt" class="page">
+        <div class="bento bento--split">
+          <section class="bento-card bento-hero bento-hero--pdp">
+            <p class="bento-badge">WYSSA ALIGN</p>
+            <h1>ALIGN M1</h1>
+            <p class="bento-lead">Precision metal bracket system for everyday orthodontics.</p>
+            <dl class="bento-specs">
+              <div><dt>Material</dt><dd>Stainless steel</dd></div>
+              <div><dt>Base</dt><dd>Mesh · anatomical</dd></div>
+              <div><dt>Marking</dt><dd>Laser-marked</dd></div>
+            </dl>
+            <img
+              data-product-hero
+              src="assets/apex-hero.png"
+              alt="WYSSA ALIGN M1 metal brackets"
+              width="1200"
+              height="700"
+            />
+          </section>
+
+          <section class="bento-card bento-config" id="configure">
+            <p class="bento-kicker">Configure</p>
+            <h2>Select specification</h2>
+            <p class="panel__lede">Prescription, slot and pack determine the SKU for Quick Order.</p>
+
+            <div class="filter-row">
+              <span>Prescription</span>
+              <div class="filters" data-chip-group role="group" aria-label="Prescription">
+                <button class="filter is-selected" type="button" data-chip data-field="rx" data-value="MBT" aria-pressed="true">MBT</button>
+                <button class="filter" type="button" data-chip data-field="rx" data-value="Roth" aria-pressed="false">Roth</button>
+              </div>
+            </div>
+            <div class="filter-row">
+              <span>Slot</span>
+              <div class="filters" data-chip-group role="group" aria-label="Slot">
+                <button class="filter is-selected" type="button" data-chip data-field="slot" data-value=".022" aria-pressed="true">.022"</button>
+                <button class="filter" type="button" data-chip data-field="slot" data-value=".018" aria-pressed="false">.018"</button>
+              </div>
+            </div>
+            <div class="filter-row">
+              <span>Pack</span>
+              <div class="filters" data-chip-group role="group" aria-label="Configuration">
+                <button class="filter is-selected" type="button" data-chip data-field="pack" data-value="Full Case" aria-pressed="true">Full case</button>
+                <button class="filter" type="button" data-chip data-field="pack" data-value="Upper 5–5" aria-pressed="false">Upper 5–5</button>
+                <button class="filter" type="button" data-chip data-field="pack" data-value="Lower 5–5" aria-pressed="false">Lower 5–5</button>
+                <button class="filter" type="button" data-chip data-field="pack" data-value="Individual" aria-pressed="false">Individual</button>
+              </div>
+            </div>
+
+            <div class="config-actions">
+              <p class="config-sku" data-product-label>ALIGN M1 · MBT · .022" · Full Case</p>
+              <code data-sku>WYS-ALM1-MBT-022</code>
+              <a class="btn-bento" data-add-order href="quick-order.html?sku=WYS-ALM1-MBT-022">
+                Add to order
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </section>
+        </div>
+
+        <section class="panel">
+          <h2>Specifications</h2>
+          <table class="spec-table">
+            <tbody>
+              <tr><th>SKU</th><td data-sku>WYS-ALM1-MBT-022</td></tr>
+              <tr><th>Material</th><td>Stainless steel</td></tr>
+              <tr><th>Slot</th><td data-spec-slot>.022"</td></tr>
+              <tr><th>Prescription</th><td data-spec-rx>MBT</td></tr>
+              <tr><th>Base</th><td>Mesh</td></tr>
+              <tr><th>Geometry</th><td>Low-profile, rounded edges, anatomical base</td></tr>
+              <tr><th>Identification</th><td>Laser-marked</td></tr>
+              <tr><th>Application</th><td>Orthodontic</td></tr>
+              <tr><th>Sterility</th><td>Non-sterile</td></tr>
+              <tr><th>Packaging</th><td data-spec-pack>Full Case</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <div class="bento bento--split">
+          <section class="bento-card">
+            <p class="bento-kicker">Documents</p>
+            <h2>Product documents</h2>
+            <ul class="docs">
+              <li>Instructions for Use</li>
+              <li>Declaration of Conformity</li>
+              <li>Technical Data Sheet</li>
+              <li>Safety Information</li>
+              <li>Product Catalogue</li>
+            </ul>
+            <p class="notice">Issued for professional use. No clinical performance claims beyond stated specifications.</p>
+          </section>
+          <section class="bento-card">
+            <p class="bento-kicker">Range</p>
+            <h2>Related products</h2>
+            <p class="panel__lede">Pair ALIGN M1 with ARC archwires and TIE / LINK ligatures.</p>
+            <div class="related-links">
+              <a class="btn-bento btn-bento--ghost" href="wires.html">ARC archwires</a>
+              <a class="btn-bento btn-bento--ghost" href="elastics.html">TIE · LINK</a>
+            </div>
+          </section>
+        </div>
+      </main>
+      <div data-site-footer></div>
+    </div>
+    <script src="js/catalog.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

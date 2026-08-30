@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Practice Account — WYSSA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body data-page="professionals" class="is-bento">
+    <div class="shell">
+      <div data-site-header></div>
+      <main id="inhalt" class="page">
+        <div class="panel">
+          <h1>Practice account</h1>
+          <p class="panel__lede">
+            For orthodontic practices. We confirm practice details before the first shipment. No consumer accounts.
+          </p>
+          <p class="notice notice--ok" data-account-ok hidden>
+            Account request received. WYSSA will confirm practice details before the first shipment.
+          </p>
+          <form class="form" action="professionals.html" method="get">
+            <label class="field">
+              <span>Practice name</span>
+              <input type="text" name="practice" required autocomplete="organization" placeholder="Orthodontic Practice Müller" />
+            </label>
+            <label class="field">
+              <span>Contact person</span>
+              <input type="text" name="contact" required autocomplete="name" placeholder="Dr. Anna Müller" />
+            </label>
+            <label class="field">
+              <span>Work email</span>
+              <input type="email" name="email" required autocomplete="email" placeholder="praxis@example.com" />
+            </label>
+            <label class="field">
+              <span>VAT ID</span>
+              <input type="text" name="vat" autocomplete="off" placeholder="DE123456789" />
+            </label>
+            <label class="field">
+              <span>Billing address</span>
+              <input type="text" name="billing" autocomplete="billing street-address" placeholder="Street, postcode, city" />
+            </label>
+            <label class="field">
+              <span>Shipping address</span>
+              <input type="text" name="shipping" autocomplete="shipping street-address" placeholder="Leave blank if same as billing" />
+            </label>
+            <button class="btn-bento" type="submit">Request account <span aria-hidden="true">↗</span></button>
+          </form>
+          <p class="notice">
+            Accounts store practice data, contacts, addresses, VAT ID, order history, invoices, favourites and standard products.
+          </p>
+        </div>
+
+        <div class="bento bento--split">
+          <a class="bento-card bento-quick" href="quick-order.html" id="bulk">
+            <p class="bento-kicker">Procurement</p>
+            <h2>Bulk ordering</h2>
+            <p>Enter SKUs such as WYS-ARC-N-U-014. Reorder without browsing the catalog.</p>
+            <code>WYS-ARC-N-U-014</code>
+          </a>
+          <a class="bento-card bento-account" href="support.html" id="distributor">
+            <p class="bento-kicker">Network</p>
+            <h2>Distributor program</h2>
+            <p>Dental depots and international distributors: contact WYSSA via Support.</p>
+          </a>
+        </div>
+      </main>
+      <div data-site-footer></div>
+    </div>
+    <script src="js/catalog.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
